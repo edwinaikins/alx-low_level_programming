@@ -1,23 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <time.h>
 
 /**
- * main - Printing alphabet without q and e
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i;
+	int d;
 
-	for (i = 97; i < 123; i++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		if (i != 101 && i != 113)
+		putchar(d);
+		if (d != '9')
 		{
-			putchar(i);
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
