@@ -1,17 +1,20 @@
+#include <unistd.h>
 #include "main.h"
+
 /**
- * main - starts here
- * Prints something
- * Return: Always 0
+ * main - Check description
+ * Description: It prints the word Holberton, followed by a new line.
+ * Return: 0.
  */
 int main(void)
 {
-	char c[] = "_putchar";
-	int x;
-	int length = sizeof(c);
+	char word[8] = "_putchar";
+	int i;
 
-	for (x = 0; x < length; x++)
-		_putchar(c[x]);
+	for (i = 0; i < 8; i++)
+		_putchar(word[i]);
+	_putchar('\n');
+
 	return (0);
 }
 
