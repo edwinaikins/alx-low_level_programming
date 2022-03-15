@@ -8,14 +8,16 @@
  */
 int _isalpha(int c)
 {
-	int x;
+	int l;
+	int u;
 
-	for (x = 65; x < 91; x++)
-		if (x == c)
-			return (1);
-		else
-			for(x = 97; x <123; x++)
-				if(x == c)
-					return (1);
+	for (u = 65; u < 91; u++)
+	{
+		for (l = 97; l < 123; l++)
+		{
+			if (u == c || l == c)
+				return (1);
+		}
+	}
 	return (0);
 }
