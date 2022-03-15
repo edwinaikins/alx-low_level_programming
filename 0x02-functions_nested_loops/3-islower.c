@@ -11,8 +11,9 @@ int _islower(int c)
 	int x;
 
 	for (x = 97; x < 123; x++)
-		if (x == c)
+	{	if (x == c)
 			return (1);
 		else
 			return (0);
+	}
 }
