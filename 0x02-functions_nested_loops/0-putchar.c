@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * main - starts here
  * Prints something
@@ -8,10 +8,10 @@ int main(void)
 {
 	char c[] = "_putchar";
 	int x;
-
-	for (x = 0; x < sizeof(c); x++)
+	int length = sizeof(c);
+	for (x = 0; x < length; x++)
 		_putchar(c[x]);
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
 
